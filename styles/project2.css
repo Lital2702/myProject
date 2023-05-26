@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&family=Rubik:wght@300&family=Satisfy&family=Varela+Round&display=swap');
+
+body{
+    direction: rtl;
+}
+
+.row{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.row>*{
+    padding: 0;
+}
+
+h1{
+    font-size: 35px;
+    font-family: 'Heebo', sans-serif;
+    color: #020253;
+    font-weight: bold;
+}
+
+p{
+    font-size: 15px;
+    font-family: 'Heebo', sans-serif;
+    color: #020253; 
+}
+
+.img{
+    background-image: url(../images/coffee.png);
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.col-md-5{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    max-width: 350px;
+    padding: 16px;
+}
+
+label{
+    display: block;
+    margin: 20px 0;
+    font-family: 'Heebo', sans-serif;
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+}
+
+input{
+    background-color: #E5EEFF !important;
+    border-radius: 0 !important;
+    border-color: white !important;
+    border-bottom: 3px solid #020253 !important;
+}
+
+button{
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold !important;
+    font-size: 15px !important;
+    border-radius: 0 !important;
+    border-color: #020253 !important;
+    background-color: #020253 !important;
+    width: 130px !important;
+    height: 38px;
+}
+
+@media (max-width: 768px) {
+    .row{
+        position: static;
+        flex-flow: wrap-reverse;
+    }
+
+    form{
+        margin-top: 30px;
+    }
+
+    .img{
+        height: 400px;
+    }
+}

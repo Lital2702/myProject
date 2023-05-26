@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&family=Rubik:wght@300&display=swap");
+body {
+  direction: rtl;
+  font-family: "Heebo", sans-serif;
+}
+
+nav {
+  padding: 0 !important;
+  box-shadow: 0px 5px 10px 1px rgba(168, 168, 168, 0.4784313725);
+  position: sticky !important;
+  top: 0;
+  z-index: 1;
+}
+nav a:hover {
+  color: #0cbfc9 !important;
+  scale: 1.1;
+  transition: 0.6s;
+}
+
+.navbar-brand:hover {
+  scale: 1 !important;
+}
+
+.logo {
+  font-family: "Satisfy", cursive;
+}
+.logo:hover {
+  color: #2a2a2a !important;
+}
+.logo span {
+  margin-left: 8px;
+  font-size: 20px;
+  position: relative;
+  top: 8px;
+}
+.logo .icon {
+  height: 50px;
+  border-radius: 50%;
+}
+
+li.nav-item {
+  margin: 0 12px;
+}
+
+a.nav-link {
+  font-size: 20px;
+  font-weight: 500;
+  color: #2c2c2c !important;
+}
+
+.main {
+    text-align: center;
+    background-image: linear-gradient(45deg, rgba(19, 232, 241, 0.3019607843), rgba(19, 232, 241, 0.3019607843)), url(assets/Image20230502090934.png);
+    padding: 6rem !important;
+    margin: 0 !important;
+  }
+  .main h1 {
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  .btn-info{
+    margin-top: 20px;
+    font-size: 1.4em;
+    border-radius: 30px;
+    padding: 6px 32px;
+    margin: 5px;
+}
+
+  .icons {
+    text-align: center;
+    direction: ltr;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+    padding: 8px;
+  }
+  .icons img {
+    height: 80px;
+    transition: 0.3s;
+  }
+  .icons img:hover {
+    scale: 1.1;
+  }
+
+  .screenshot3{
+    background-image: url(assets/IMG_20230514_162452.jpg) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    width: 1100px;
+    margin: 50px auto;
+    box-shadow: 0px 0px 60px #00000066;
+  }
+
+  #links {
+    background-color: #0dcaf0;
+    text-align: center;
+    padding: 25px 0;
+    direction: ltr;
+    margin: 0;
+  }
+  #links img {
+    height: 40px;
+    margin: auto;
+    display: block;
+  }
+  #links span {
+    margin: 8px 0;
+    display: inline-block !important;
+  }
+  
+  footer {
+    padding: 8px;
+    background-color: #2a2a2a;
+    color: white;
+  }
