@@ -7,6 +7,7 @@ html{
 }
 
 body{
+    max-width: 100%;
     direction: rtl;
     background-image: url(../images/Path\ 14.png);
     background-repeat: no-repeat;
@@ -93,14 +94,13 @@ button{
   }
 
   input{
-    width: 500px;
+    width: 400px;
     padding: 10px;
-    margin-bottom: 10px;
-    
+    margin-bottom: 10px;    
   }
 
   button{
-    width: 515px;
+    width: 415px;
     padding: 10px;
   }
 }
