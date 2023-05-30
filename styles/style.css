@@ -152,7 +152,7 @@ a.nav-link {
 }
 
 #contact {
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.4509803922), transparent), url(assets/Image20230502125340.png);
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.4509803922), transparent), url(../images/Image20230502125340.png);
   background-color: #3a3a3a;
   padding: 7em 5vw !important;
   margin: 0 !important;
