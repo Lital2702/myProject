@@ -82,14 +82,15 @@ body{
    .background-img{
       background-image: url(../images/Path\ 13.png);width: 600px;
       height: 400px;
+      width: 100%;
     }
 
     .bigDiv{
         position: absolute;
-        top: 15%;
+        top: 13%;
         right: 10%;
-        width: 500px;
-        height: 600px;
+        width: 600px;
+        height: 700px;
 
         h1{
             font-size: 50px;
