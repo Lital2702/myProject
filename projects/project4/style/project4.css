@@ -26,85 +26,87 @@ body {
   padding: 40px 35px;
   box-sizing: border-box;
 }
-.bigDiv h1 {
+
+form {
+  display: block;
+  color: white;
+  text-align: center;
+}
+form h1 {
   font-family: "Heebo", sans-serif;
   font-size: 23px;
   text-align: center;
   color: #FFFFFF;
 }
-.bigDiv p {
+form p {
+  font-family: "Heebo", sans-serif;
+  text-align: right;
+  margin-top: 23px;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+form .field {
+  margin-bottom: 10px;
+}
+form label {
   font-family: "Heebo", sans-serif;
   font-size: 12px;
-  color: #F9F9F9;
-  margin-top: 15px;
-}
-.bigDiv form {
-  position: relative;
-  top: 10%;
-}
-.bigDiv form .field {
-  margin-bottom: 13px;
-}
-.bigDiv form .field label {
   display: block;
-  font-family: "Heebo", sans-serif;
-  font-size: 12px;
+  text-align: right;
   font-weight: bold;
-  color: #FFFFFF;
 }
-.bigDiv form .field input {
-  padding: 3px;
+form input {
+  display: block;
+  margin-top: 5px;
+  height: 30px;
   width: 250px;
-  height: 20px;
-  border: 1px solid #D31C75;
-}
-.bigDiv form button {
-  font-family: "Heebo", sans-serif;
-  font-weight: bold;
-  color: #FFFFFF;
-  background-color: #D31C75;
-  border: 0px;
-  width: 80px;
-  padding: 5px;
-  margin-top: 6px;
+  border: 1px solid #d31c75;
 }
 
-@media (max-width: 1050px) {
-  .background-img {
-    background-image: url(../images/Path\ 13.png);
-    height: 400px;
-    width: 100%;
+button {
+  background-color: #d31c75;
+  color: white;
+  display: block;
+  height: 30px;
+  width: 120px;
+  font-size: 18px;
+  border: 0px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .background-div {
+    width: 80%;
+    height: auto;
+    right: 10%;
+    padding: 45px;
   }
   .bigDiv {
-    position: absolute;
-    top: 13%;
-    right: 10%;
     width: 600px;
-    height: 700px;
+    height: 600px;
+    right: 10%;
+    padding: 45px;
   }
-  .bigDiv h1 {
-    font-size: 50px;
+  form h1 {
+    font-size: 40px;
   }
-  .bigDiv p {
+  form p {
+    font-size: 20px;
+    text-align: center;
+  }
+  form .field {
+    margin-bottom: 40px;
+  }
+  form label {
     font-size: 20px;
   }
-  .bigDiv form {
-    position: relative;
-    top: 10%;
+  form input {
+    width: 100%;
+    height: 40px;
   }
-  .bigDiv form .field {
-    margin-bottom: 13px;
-  }
-  .bigDiv form .field label {
-    font-size: 20px;
-  }
-  .bigDiv form .field input {
-    width: 400px;
-    padding: 8px;
-  }
-  .bigDiv form button {
-    font-size: 20px;
-    width: 100px;
-    padding: 8px;
+  button {
+    width: 30%;
+    height: 40px;
   }
 }/*# sourceMappingURL=project4.css.map */
