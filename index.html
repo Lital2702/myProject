@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
     <title>myProject</title>
 </head>
 <body>
@@ -50,6 +51,11 @@
         <img src="images/9f1736a8-79bf-477a-80d8-e648fa46dd5b.png" alt="CSS">
         <img src="images/dd0b298f-fbbb-43e5-ab3b-a24873f29cea.png" alt="SASS">
         <img src="images/fe816c34-a4aa-4808-be1d-8855837e3480.png" alt="BOOT">
+        <img src="images/2831e815-65e2-4bb5-b58f-8330ed3be5f6.png" alt="JS">
+        <img src="images/27d38a89-6811-40ae-84c2-aafa26dd64b4.png" alt="OOP">
+        <img src="images/ce690304-44be-4fe4-95b7-4e6ea85d9675.png" alt="TY">
+        <img src="images/f5c3457b-cbca-4e0e-aa5b-74dceb5c0d91.png" alt="API">
+        <img src="images/fac93b03-0238-45aa-99b3-e1f962631845.png" alt="REACT">
       </div>
 
       <div id="about" class="mt-4 p-5">
@@ -140,23 +146,102 @@
         </div>
     </section>
 
+      <section id="gallery">
+        <h2>JavaScript</h2>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/mathGame.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Math game</h4>
+                        <p class="card-text">כנסו למשחק החשבון שלנו והפעילו את הראש</p>
+
+                        <a href="indexProjects/index5.html" class="btn btn-primary">לעמוד הפרויקט</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/tic tac toe.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Tic Tac Toe</h4>
+                        <p class="card-text">כנסו לשחק במשחק המוכר איקס עיגול</p>
+
+                        <a href="indexProjects/index6.html" class="btn btn-primary">לעמוד הפרויקט</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/snake.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Snake</h4>
+                        <p class="card-text">כנסו למשחק ותגלו כמה אתם יכולים להאכיל את הנחש</p>
+
+                        <a href="indexProjects/index7.html" class="btn btn-primary">לעמוד הפרויקט</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/tasks.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Task Manager</h4>
+                        <p class="card-text">כנסו ליצור את מנהל המשימות שלכם</p>
+
+                        <a href="indexProjects/index8.html" class="btn btn-primary">לעמוד הפרויקט</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/puzzle.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Number puzzle</h4>
+                        <p class="card-text">הפעילו את המוח ושחקו בפאזל המספרים שלנו</p>
+
+                        <a href="indexProjects/index9.html" class="btn btn-primary">לעמוד הפרויקט</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/products.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Products list</h4>
+                        <p class="card-text">כנסו לערוך את רשימת המוצרים שלכם </p>
+
+                        <a href="indexProjects/index10.html" class="btn btn-primary">לעמוד הפרויקט</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <section id="contact">
       <div class="col-sm-6">
         <h2>צור קשר</h2>
         <p>מלאו את הפרטים ולחצו על שליחה</p>
 
-        <form>
+        <form onsubmit="send(event)">
           <label class="form-label">שם:</label>
-          <input class="form-control" type="name">
+          <input class="form-control" type="name" name="name">
 
           <label class="form-label">אימייל:</label>
-          <input class="form-control" type="name">
+          <input class="form-control" type="email" name="email">
 
           <label class="form-label">טלפון:</label>
-          <input class="form-control" type="name">
+          <input class="form-control" type="tel" name="phone">
 
           <label class="form-label">הודעה:</label>
-          <textarea class="form-control" cols="30" rows="10"></textarea>
+          <textarea class="form-control" cols="30" rows="10" name="message"></textarea>
 
             <button class="btn btn-info">שליחה</button>
         </form>

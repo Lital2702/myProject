@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Heebo:wght@300;400;500;600;700;800;900&family=Rubik:wght@300&family=Satisfy&family=Varela+Round&display=swap');
+
+body {
+    max-width: 100%;
+    background-image: url(../images/math.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .bigDiv {
+    width: 650px;
+    height: 350px;
+    background-color: #1A1A1AE6;
+    position: absolute;
+    top: 20%;
+    right: 17%;
+  }
+  
+  h1 {
+    font-family: 'Heebo', sans-serif;
+    color: #FFFFFF;
+    text-align: right;
+    font-size: 25px;
+    margin-top: 40px;
+    margin-right: 90px;
+  }
+
+  .p1 {
+    font-family: 'Heebo', sans-serif;
+    color: #F9F9F9;
+    text-align: right;
+    font-size: 12px;
+    margin-right: 89px;
+  }
+
+  .smallDiv {
+    direction: rtl;
+    margin-top: 20px;
+    margin-right: 89px;
+  }
+  
+  #question {
+    direction: ltr;
+    font-family: 'Heebo', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: right;
+    margin-right: 89px;
+  }
+
+  #answer {
+    width: 80px;
+    padding: 7px;
+    border: 1px solid #1EE2F8;
+  }
+  
+  #checkButton {
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+    width: 60px;
+    padding: 5px;
+    background-color: #1EE2F8;
+    color: #050d79;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  #restartButton {
+    white-space: nowrap;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+    width: 80px;
+    padding: 5px;
+    background-color: #1EE2F8;
+    color: #050d79;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  #result {
+    direction: rtl;
+    font-family: 'Heebo', sans-serif;
+    font-size: 15px;
+    margin-right: 89px;
+    font-weight: bold;
+  }
+
+  @media (max-width: 768px) {
+
+    .bigDiv{
+      position: absolute;
+      left: 7%;
+      height: 600px;
+    }
+
+    h1{
+      font-size: 50px;
+    }
+
+    .p1{
+      font-size: 20px;
+    }
+
+    #question{
+      font-size: 40px;
+    }
+
+   #answer {
+    width: 100px;
+    padding: 10px;
+   }
+
+   #checkButton, #restartButton{
+    width: 80px;
+    padding: 7px;
+   }
+
+  }

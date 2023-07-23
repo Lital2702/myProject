@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Heebo:wght@300;400;500;600;700;800;900&family=Rubik:wght@300&family=Satisfy&family=Varela+Round&display=swap');
+
+body{
+  max-width: 100%;
+  direction: rtl;
+  background-image: url(../images/milky-way-2695569_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bigDiv{
+  position: absolute;
+  right: 26%;
+  top: 3%;
+  width: 650px;
+  height: 580px;
+  background-color: #1A1A1AD4;
+}
+
+h1{
+  font-family: 'Heebo', sans-serif;
+  color: #FDBD03;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#board {  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0;
+  position: relative;
+  right: 26%;
+  width: 300px;
+  margin-bottom: 15px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #FFFFFF;
+  border: 1px solid #FDBD03;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  cursor: pointer;
+}
+
+button {
+  font-family: 'Heebo', sans-serif;
+  font-weight: bold;
+  color: #FDBD03;
+  background-color: #FFFFFF;
+  border: 2px solid #FDBD03;
+  position: relative;
+  right: 26%;
+  width: 305px;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+  
