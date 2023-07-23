@@ -8,18 +8,17 @@ let direction = 'left';
 let isGameOver = false;
 let random;
 let interval;
-// כל האלמנטים של הלוח
+
 const divs = [];
 
 const rightBoundaries = [];
 const leftBoundaries = [];
 
-// גבולות ימין
+
 for (let i = 0; i < height; i++) {
     rightBoundaries.push(width * i - 1);
 }
 
-// גבולות שמאל
 for (let i = 1; i <= height; i++) {
     leftBoundaries.push(width * i);
 }

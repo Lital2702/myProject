@@ -6,19 +6,16 @@ function login() {
 
     loader(true);
 
-    // שליחה לשרת
+    
     fetch("https://api.shipap.co.il/login", {
         method: 'POST',
-        credentials: 'include', // מאפשר שליחה וקבלה של עוגיות
+        credentials: 'include', 
         headers: {
-            'Content-Type': 'application/json' // הגדרת סוג התוכן הנשלח לשרת
+            'Content-Type': 'application/json' 
         },
-        body: JSON.stringify(obj), // תוכן הקריאה לשרת
+        body: JSON.stringify(obj), 
     })
-        // קבלה מהשרת
-        // *המרת התוכן לפי הצורך*
         .then(res => res.json())
-        // התוכן שהתקבל מהשרת (לאחר טיפול של הפונקציה הקודמת)
         .then(data => {
             if (data.status == 'success') {
                 setUser(data.user);
@@ -31,7 +28,6 @@ function login() {
         });
 }
 
-// פונקציה הרצה בהפעלת האתר ובודקת האם היוזר מחובר
 function loginStatus() {
     loader(true);
 
@@ -179,20 +175,17 @@ function removeProduct(id, btnElem) {
         });
 }
 
-// פונקציה האחראית לשים את שם המשתמש בהודעה או לאפשר התחברות
 function setUser(user = null) {
     const divLogin = document.querySelector(".login");
     const divUser = document.querySelector(".user");
     const divProduct = document.querySelector(".products");
 
-    // אם יש יוזר, מציגה את שם היוזר ומסתירה את תיבת ההתחברות 
     if (user) {
         divLogin.style.display = 'none';
         divUser.style.display = 'block';
         divUser.querySelector('.userName').innerHTML = `${user.fullName} מחובר!`;
         getProducts();
     } else {
-        // אם אין יוזר, מציגה את תיבת ההתחברות
         divLogin.style.display = 'block';
         divUser.style.display = 'none';
         divProduct.style.display = 'none';

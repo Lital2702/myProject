@@ -11,14 +11,12 @@ const board = document.querySelector(".board");
 board.style.gridTemplateColumns = `repeat(${width}, 1fr)`;
 
 function createBoard() {
-    // יצרנו מערך עם מספרים
     const numbers = new Array(length).fill().map((n, i) => i + 1);
 
     for (let i = 0; i < length; i++) {
         const div = document.createElement('div');
         const rand = Math.floor(Math.random() * numbers.length);
 
-        // רק אם זה לא המספר האחרון
         if (numbers[rand] !== length) {
             div.innerHTML = numbers[rand];
         }
@@ -27,7 +25,6 @@ function createBoard() {
         board.appendChild(div);
         divs.push(div);
 
-        // אירוע המופעל במעבר עכבר
         div.addEventListener("mouseover", ev => {
             if (isGameOver) {
                 return;
@@ -41,13 +38,11 @@ function createBoard() {
             }
         });
 
-        // אירוע המופעל בעזיבת העכבר
         div.addEventListener("mouseout", ev => {
             const empty = divs.find(el => el.innerHTML == '');
             empty.classList.remove('active');
         });
 
-        // אירוע המופעל בלחיצה על העכבר
         div.addEventListener("click", ev => {
             if (isGameOver) {
                 return;
@@ -140,7 +135,6 @@ function gameOver() {
     }, 5 * 1000);
 }
 
-// אם לוחצים 3 פעמים על המקש "ב" במקלדת, זה מפעיל את הפונקציה שמרמה
 let keyConunter = 0;
 
 window.addEventListener("keyup", ev => {

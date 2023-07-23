@@ -6,19 +6,17 @@ function login() {
 
     loader(true);
 
-    // שליחה לשרת
+    // Sending to server
     fetch("https://api.shipap.co.il/login", {
         method: 'POST',
-        credentials: 'include', // מאפשר שליחה וקבלה של עוגיות
+        credentials: 'include', // Allows sending and receiving cookies
         headers: {
-            'Content-Type': 'application/json' // הגדרת סוג התוכן הנשלח לשרת
+            'Content-Type': 'application/json' // Defining the type of content sent to the server
         },
-        body: JSON.stringify(obj), // תוכן הקריאה לשרת
+        body: JSON.stringify(obj), // The content of the call to the server
     })
-        // קבלה מהשרת
-        // *המרת התוכן לפי הצורך*
+   // Receive from the server        
         .then(res => res.json())
-        // התוכן שהתקבל מהשרת (לאחר טיפול של הפונקציה הקודמת)
         .then(data => {
             if (data.status == 'success') {
                 setUser(data.user);
@@ -31,8 +29,8 @@ function login() {
         });
 }
 
-// פונקציה הרצה בהפעלת האתר ובודקת האם היוזר מחובר
-function loginStatus() {
+// A function that runs when the website is activated and checks whether the user is connected
+    function loginStatus() {
     loader(true);
 
     fetch("https://api.shipap.co.il/login", {
@@ -179,20 +177,20 @@ function removeProduct(id, btnElem) {
         });
 }
 
-// פונקציה האחראית לשים את שם המשתמש בהודעה או לאפשר התחברות
-function setUser(user = null) {
+// Function responsible for putting the username in the message or enabling login
+    function setUser(user = null) {
     const divLogin = document.querySelector(".login");
     const divUser = document.querySelector(".user");
     const divProduct = document.querySelector(".products");
 
-    // אם יש יוזר, מציגה את שם היוזר ומסתירה את תיבת ההתחברות 
-    if (user) {
+// If there is a user, displays the user's name and hides the login box
+        if (user) {
         divLogin.style.display = 'none';
         divUser.style.display = 'block';
         divUser.querySelector('.userName').innerHTML = `${user.fullName} מחובר!`;
         getProducts();
     } else {
-        // אם אין יוזר, מציגה את תיבת ההתחברות
+// If there is no user, displays the login box
         divLogin.style.display = 'block';
         divUser.style.display = 'none';
         divProduct.style.display = 'none';
