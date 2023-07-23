@@ -2,7 +2,7 @@
 
 # What does the project contain?
 
-We were asked to create an initial work portfolio that contains 4 initial projects that we will create on our own and test our
+We were asked to create an initial work portfolio that contains 6 initial projects that we will create on our own and test our
 knowledge and mastery of the material studied.
 
 # How is the project structured?
@@ -24,15 +24,17 @@ The secondary page is divided into 3 areas:
 * The menu - +contains a photo and name of the student.
              +by clicking on the image or name it takes you back to the main page.
              
-* Project name - +contains the name of the project and a sentence that describes it.
+* Project name - +contains the name of the project and the programming languages ​​I used.
                  +there are two buttons, by pressing the first button you go to view the project and the second button downloads the 
                  project files.
                  
-* Image - +a picture of the project.                
+* Image - +a picture of the project.
 
 # Programming languages i have used
 
 * HTML
 * CSS
-* SASS
-* BOOTSTRAP
+* JAVASCRIPT
+* TYPESCRIPT
+* FETCH API
+* OOP Classes
